@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "La Cima del Poder Personal",
   description:
-    "Sesion de coaching sobre poder personal, autoestima y auto recompensa inspirada en el senderismo y los volcanes.",
+    "Sesión de coaching sobre poder personal, autoestima y auto recompensa inspirada en el senderismo y los volcanes.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

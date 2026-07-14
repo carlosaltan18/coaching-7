@@ -545,6 +545,258 @@ img {
   font-weight: 900;
 }
 
+.carousel-page {
+  min-height: 100vh;
+  padding: 5.5rem 1rem 3rem;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(216, 115, 67, 0.11), transparent 24rem),
+    radial-gradient(circle at 82% 28%, rgba(18, 56, 45, 0.12), transparent 26rem),
+    var(--paper);
+}
+
+.carousel-nav {
+  position: fixed;
+  z-index: 5;
+  top: 1rem;
+  left: 50%;
+  display: flex;
+  gap: 0.5rem;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  padding: 0.35rem;
+  border: 1px solid rgba(18, 56, 45, 0.18);
+  border-radius: 8px;
+  background: rgba(251, 250, 246, 0.86);
+  box-shadow: 0 14px 38px rgba(18, 56, 45, 0.12);
+  transform: translateX(-50%);
+  backdrop-filter: blur(14px);
+}
+
+.carousel-nav a {
+  border-radius: 6px;
+  padding: 0.68rem 0.9rem;
+  color: var(--forest);
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.carousel-nav a:hover {
+  background: var(--forest);
+  color: #fffaf1;
+}
+
+.carousel-shell {
+  position: relative;
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 253, 249, 0.9);
+  box-shadow: var(--soft-shadow);
+  overflow: hidden;
+}
+
+.carousel-shell::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  content: "";
+  background: linear-gradient(90deg, var(--forest), var(--clay));
+}
+
+.carousel-header {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(280px, 0.58fr);
+  gap: 2rem;
+  padding: 4rem 4rem 2rem;
+  align-items: end;
+}
+
+.carousel-header h1 {
+  margin: 0;
+  color: var(--forest-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.carousel-header p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.carousel-experience {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 1rem;
+  padding: 0 4rem 4rem;
+}
+
+.carousel-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3.2rem minmax(0, 1fr) 3.2rem;
+  gap: 0.8rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.carousel-frame {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 250, 241, 0.1);
+  border-radius: 8px;
+  background: var(--forest-deep);
+}
+
+.carousel-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: min(68vh, 680px);
+  padding: 1rem;
+}
+
+.carousel-main-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(68vh, 680px);
+  object-fit: contain;
+}
+
+.carousel-frame figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 250, 241, 0.1);
+  padding: 1rem 1.15rem;
+  color: rgba(255, 250, 241, 0.78);
+  font-weight: 800;
+}
+
+.carousel-frame figcaption span {
+  color: #efb28f;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.carousel-control {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf1;
+  color: var(--forest);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.carousel-control:hover {
+  border-color: var(--forest);
+  background: var(--forest);
+  color: #fffaf1;
+}
+
+.carousel-panel {
+  align-self: start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf1;
+  padding: 1.2rem;
+}
+
+.carousel-counter span {
+  display: block;
+  color: var(--clay);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.carousel-counter p,
+.carousel-panel > p {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.carousel-progress {
+  height: 0.45rem;
+  margin: 1.2rem 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(18, 56, 45, 0.12);
+}
+
+.carousel-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--forest), var(--clay));
+  transition: width 180ms ease;
+}
+
+.carousel-thumbs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+  gap: 0.55rem;
+  max-height: 220px;
+  overflow: auto;
+  padding-right: 0.25rem;
+}
+
+.carousel-thumb {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 78px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffaf1;
+  cursor: pointer;
+  padding: 0.35rem;
+}
+
+.carousel-thumb img {
+  width: 100%;
+  height: 70px;
+  object-fit: contain;
+}
+
+.carousel-thumb span {
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  display: grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 999px;
+  background: rgba(18, 56, 45, 0.82);
+  color: #fffaf1;
+  font-size: 0.64rem;
+  font-weight: 900;
+}
+
+.carousel-thumb.active {
+  border-color: var(--clay);
+  box-shadow: 0 0 0 2px rgba(216, 115, 67, 0.2);
+}
+
 @media (max-width: 980px) {
   .hero {
     min-height: auto;
@@ -582,6 +834,26 @@ img {
 
   .photo-grid {
     column-count: 2;
+  }
+
+  .carousel-header,
+  .carousel-experience {
+    grid-template-columns: 1fr;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .carousel-header h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-stage {
+    grid-template-columns: 2.8rem minmax(0, 1fr) 2.8rem;
+  }
+
+  .carousel-control {
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }
 
@@ -640,5 +912,45 @@ img {
 
   .balance-meter span {
     font-size: 4rem;
+  }
+
+  .carousel-page {
+    padding: 4.6rem 0.65rem 1rem;
+  }
+
+  .carousel-header {
+    padding-top: 3rem;
+  }
+
+  .carousel-header h1 {
+    font-size: 2.35rem;
+  }
+
+  .carousel-stage {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carousel-frame {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .carousel-control {
+    width: 100%;
+    grid-row: 2;
+  }
+
+  .carousel-image-wrap {
+    min-height: 420px;
+    padding: 0.75rem;
+  }
+
+  .carousel-main-image {
+    max-height: 420px;
+  }
+
+  .carousel-thumbs {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    max-height: 190px;
   }
 }

@@ -1,0 +1,53 @@
+export type Photo = {
+  number: number;
+  src: string;
+  width: number;
+  height: number;
+};
+
+export const photos: Photo[] = [
+  { number: 1, src: "/photos/photo-01.jpg", width: 492, height: 653 },
+  { number: 2, src: "/photos/photo-02.jpg", width: 902, height: 641 },
+  { number: 3, src: "/photos/photo-03.jpg", width: 507, height: 591 },
+  { number: 4, src: "/photos/photo-04.jpg", width: 502, height: 632 },
+  { number: 5, src: "/photos/photo-05.jpg", width: 503, height: 668 },
+  { number: 6, src: "/photos/photo-06.jpg", width: 887, height: 642 },
+  { number: 7, src: "/photos/photo-07.jpg", width: 858, height: 653 },
+  { number: 8, src: "/photos/photo-08.jpg", width: 511, height: 663 },
+  { number: 9, src: "/photos/photo-09.jpg", width: 502, height: 672 },
+  { number: 10, src: "/photos/photo-10.jpg", width: 502, height: 653 },
+  { number: 11, src: "/photos/photo-11.jpg", width: 500, height: 648 },
+  { number: 12, src: "/photos/photo-12.jpg", width: 491, height: 665 },
+  { number: 13, src: "/photos/photo-13.jpg", width: 503, height: 617 },
+  { number: 14, src: "/photos/photo-14.jpg", width: 486, height: 657 },
+  { number: 15, src: "/photos/photo-15.jpg", width: 892, height: 667 },
+  { number: 16, src: "/photos/photo-16.jpg", width: 877, height: 652 },
+  { number: 17, src: "/photos/photo-17.jpg", width: 497, height: 667 },
+  { number: 18, src: "/photos/photo-18.jpg", width: 892, height: 635 },
+  { number: 19, src: "/photos/photo-19.jpg", width: 518, height: 622 },
+  { number: 20, src: "/photos/photo-20.jpg", width: 486, height: 665 },
+  { number: 21, src: "/photos/photo-21.jpg", width: 505, height: 655 },
+  { number: 22, src: "/photos/photo-22.jpg", width: 497, height: 607 },
+  { number: 23, src: "/photos/photo-23.jpg", width: 502, height: 661 },
+  { number: 24, src: "/photos/photo-24.jpg", width: 501, height: 667 },
+  { number: 25, src: "/photos/photo-25.jpg", width: 501, height: 643 },
+  { number: 26, src: "/photos/photo-26.jpg", width: 492, height: 668 },
+  { number: 27, src: "/photos/photo-27.jpg", width: 792, height: 641 },
+  { number: 28, src: "/photos/photo-28.jpg", width: 485, height: 657 },
+  { number: 29, src: "/photos/photo-29.jpg", width: 492, height: 672 },
+  { number: 30, src: "/photos/photo-30.jpg", width: 488, height: 652 },
+  { number: 31, src: "/photos/photo-31.jpg", width: 410, height: 602 },
+  { number: 32, src: "/photos/photo-32.jpg", width: 482, height: 648 },
+  { number: 33, src: "/photos/photo-33.jpg", width: 898, height: 662 },
+  { number: 34, src: "/photos/photo-34.jpg", width: 493, height: 665 },
+  { number: 35, src: "/photos/photo-35.jpg", width: 891, height: 665 },
+  { number: 36, src: "/photos/photo-36.jpg", width: 478, height: 653 },
+  { number: 37, src: "/photos/photo-37.jpg", width: 465, height: 635 },
+  { number: 38, src: "/photos/photo-38.jpg", width: 445, height: 630 },
+  { number: 39, src: "/photos/photo-39.jpg", width: 495, height: 661 },
+  { number: 40, src: "/photos/photo-40.jpg", width: 481, height: 662 },
+  { number: 41, src: "/photos/photo-41.jpg", width: 901, height: 672 },
+  { number: 42, src: "/photos/photo-42.jpg", width: 505, height: 677 },
+  { number: 43, src: "/photos/photo-43.jpg", width: 522, height: 713 },
+  { number: 44, src: "/photos/photo-44.jpg", width: 1200, height: 1600 },
+];
